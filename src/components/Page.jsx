@@ -1,10 +1,21 @@
 import { Box } from '@mui/material';
+import PropTypes from 'prop-types';
 
 
-export const Page = ({children}) => {
+export const Page = ({children, justify, align}) => {
     return (
-        <Box id={1} className="page" sx={{ height: '100vh', maxWidth: '1000px', margin: 'auto', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+        <Box className="page" sx={{ height: '100vh', maxWidth: '75%', margin: 'auto', display: 'flex', alignItems: align, justifyContent: justify }}>
             {children}
         </Box >
     );
 }
+
+Page.propTypes = {
+    justify: PropTypes.string,
+    align: PropTypes.string,
+};
+
+Page.defaultProps = {
+    justify: "center",
+    align: "center",
+};
