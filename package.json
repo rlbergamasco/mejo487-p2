@@ -12,7 +12,6 @@
     "react-dom": "^17.0.2",
     "react-material-ui-carousel": "^2.3.5",
     "react-scripts": "4.0.3",
-    "react-waypoint": "^10.1.0",
     "typed.js": "^2.0.12",
     "web-vitals": "^1.1.2"
   },

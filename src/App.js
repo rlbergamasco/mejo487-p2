@@ -2,7 +2,6 @@ import React from 'react';
 import './app.css';
 import { Typography, Box } from '@material-ui/core';
 import { TypedText, Page, StickyBox, VRCarousel, ARCarousel, MRCarousel } from 'components';
-import { Waypoint } from 'react-waypoint';
 
 const App = () => {
   const realityTypes = ["Augmented", "Virtual", "Mixed"];
