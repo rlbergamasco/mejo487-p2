@@ -1,6 +1,5 @@
 import { Box } from '@material-ui/core';
 import Carousel from 'react-material-ui-carousel';
-import { TypedText, Page, StickyBox } from 'components';
 
 export const VRCarousel = () => {
     return (
@@ -30,10 +29,13 @@ export const VRCarousel = () => {
             }} 
             >
             <Box sx={{ height: '100vh', margin: 'auto', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <img className="under absolute" src="images/forrest.jpg" alt="forrest" />
+                <Box className="under-1 absolute dark-screen" sx={{ height: '100vh', width: '100vw'}} />
             </Box>
             <Box sx={{ height: '100vh', margin: 'auto', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <img className="under absolute" src="images/livingroom.jpg" alt="living room" />
+                <img className="under-1 absolute" src="images/forrest.jpg" alt="forrest" />
+            </Box>
+            <Box sx={{ height: '100vh', margin: 'auto', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <img className="under-1 absolute" src="images/livingroom.jpg" alt="living room" />
             </Box>
         </Carousel>
     );

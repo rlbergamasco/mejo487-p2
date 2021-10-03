@@ -33,11 +33,23 @@ img {
   margin: 0;
 }
 
-.under {
+.dark-screen {
+  background-color: #0c0e11;
+}
+
+.under-1 {
   z-index: -100;
 }
 
-.over {
+.under-2 {
+  z-index: -200;
+}
+
+.under-3 {
+  z-index: -300;
+}
+
+.over-1 {
   z-index: 100;
 }
 
@@ -47,6 +59,7 @@ img {
 
 .gray-box {
   background-color: rgba(0, 0, 0, 0.6);
+  color: white;
 }
 
 /* fade in animation */

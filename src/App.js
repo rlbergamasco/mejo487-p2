@@ -23,33 +23,34 @@ const App = () => {
               <TypedText content={realityTypes} /> <br></br>
               Reality?</Typography>
           </Page>
-          <StickyBox>
+          <StickyBox depth={3}>
             <img src="images/livingroom.jpg" alt="living room" />
           </StickyBox>
           <section>
             <Page>
-              <Typography className="gray-box" variant="h2" align="center" color="white">Imagine you're in a living room.</Typography>
+              <Typography className="gray-box" variant="h2" align="center">Imagine you're in a living room.</Typography>
             </Page>
             <section>
-              <StickyBox onTop>
-                <img src="images/square.png" alt="square" />
+              <StickyBox onTop depth={1}>
+                <img src="images/vr-frame.png" alt="vr frame" />
               </StickyBox>
               <Box className="page" sx={{ width: '100vw', height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
                 <VRCarousel />
+                <Box className="under-2 absolute dark-screen" sx={{ height: '100vh', width: '100vw' }} />
               </Box>
             </section>
             <Page>
-              <Typography className="gray-box" variant="h2" align="center" color="white">You put on a virtual reality headset and now you're in a forrest...</Typography>
+              <Typography className="gray-box" variant="h2" align="center">You put on a virtual reality headset and now you're in a forrest...</Typography>
             </Page>
             <StickyBox>
               <img src="images/livingroom.jpg" alt="forrest" />
             </StickyBox>
             <Page>
-              <Typography className="gray-box" variant="h2" align="center" color="white">You put on a virtual reality headset and now you're in a living room...</Typography>
+              <Typography className="gray-box" variant="h2" align="center">You put on a virtual reality headset and now you're in a living room...</Typography>
             </Page>
           </section>
           <Page>
-            <Typography className="gray-box" variant="h2" align="center" color="white">You put on a virtual reality headset and now you're in a living room...</Typography>
+            <Typography className="gray-box" variant="h2" align="center">You put on a virtual reality headset and now you're in a living room...</Typography>
           </Page>
         </section>
         <section>
