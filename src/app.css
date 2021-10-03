@@ -33,6 +33,10 @@ img {
   margin: 0;
 }
 
+.ar-frame {
+  opacity: 0.2;
+}
+
 .dark-screen {
   background-color: #0c0e11;
 }
@@ -50,7 +54,7 @@ img {
 }
 
 .over-1 {
-  z-index: 100;
+  z-index: 10;
 }
 
 .absolute {
@@ -59,6 +63,11 @@ img {
 
 .gray-box {
   background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 0 20px;
+}
+
+.white {
   color: white;
 }
 
