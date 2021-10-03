@@ -1,7 +1,7 @@
 import {Box, Typography} from "@material-ui/core";
 import Carousel from "react-material-ui-carousel";
 
-export const VRCarousel = () => {
+export const MRCarousel = () => {
   return (
     <Box
       className="page"
@@ -15,8 +15,8 @@ export const VRCarousel = () => {
     >
       <img
         className="over-1 absolute"
-        src="images/vr-frame.png"
-        alt="vr frame"
+        src="images/mr-frame.png"
+        alt="mr frame"
       />
       <Box
         sx={{
@@ -63,14 +63,9 @@ export const VRCarousel = () => {
           >
             <Box sx={{maxWidth: "80%"}}>
               <Typography className="gray-box" variant="h2" align="center">
-                Virtual Reality
+                Mixed Reality
               </Typography>
             </Box>
-            <img
-              className="under-1 absolute"
-              src="images/forrest.jpg"
-              alt="forrest"
-            />
           </Box>
           <Box
             sx={{
@@ -83,14 +78,9 @@ export const VRCarousel = () => {
           >
             <Box sx={{maxWidth: "80%"}}>
               <Typography className="gray-box" variant="h2" align="center">
-                changes surroundings...
+                more words
               </Typography>
             </Box>
-            <img
-              className="under-1 absolute"
-              src="images/forrest.jpg"
-              alt="forrest"
-            />
           </Box>
           <Box
             sx={{
@@ -103,14 +93,9 @@ export const VRCarousel = () => {
           >
             <Box sx={{maxWidth: "80%"}}>
               <Typography className="gray-box" variant="h2" align="center">
-                ...or in another scenic place.
+                add more here
               </Typography>
             </Box>
-            <img
-              className="under-1 absolute"
-              src="images/livingroom.jpg"
-              alt="living room"
-            />
           </Box>
           <Box
             sx={{
@@ -123,20 +108,12 @@ export const VRCarousel = () => {
           >
             <Box sx={{maxWidth: "80%"}}>
               <Typography className="white" variant="h2" align="center">
-                Virtual Reality
+                Augmented Reality
               </Typography>
-              <Typography className="white">Virtual Reality</Typography>
+              <Typography className="white">Augmented Reality</Typography>
             </Box>
-            <Box
-              className="under-1 absolute dark-screen"
-              sx={{height: "100vh", width: "100vw"}}
-            />
           </Box>
         </Carousel>
-        <Box
-          className="under-2 absolute dark-screen"
-          sx={{height: "100vh", width: "100vw"}}
-        />
       </Box>
     </Box>
   );

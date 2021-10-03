@@ -1,11 +1,11 @@
 import React from 'react';
 import './app.css';
 import { Typography, Box } from '@material-ui/core';
-import { TypedText, Page, StickyBox, VRCarousel, ARCarousel } from 'components';
+import { TypedText, Page, StickyBox, VRCarousel, ARCarousel, MRCarousel } from 'components';
 import { Waypoint } from 'react-waypoint';
 
 const App = () => {
-  const realityTypes = ["Virtual", "Augmented", "Mixed"];
+  const realityTypes = ["Augmented", "Virtual", "Mixed"];
   // const [viewHeight, setViewHeight] = useState(0);
   // useEffect(() => {
   //   setViewHeight(document.getElementById('1').clientHeight);
@@ -18,20 +18,18 @@ const App = () => {
 
       <div className="snap">
         <section>
-          <Page>
-            <Typography variant="h1" align="center">What is <br></br>
-              <TypedText content={realityTypes} /> <br></br>
-              Reality?</Typography>
-          </Page>
+
           <StickyBox depth={3}>
             <img src="images/livingroom.jpg" alt="living room" />
           </StickyBox>
           <Page>
-            <Typography className="gray-box" variant="h2" align="center">You're in a living room.</Typography>
+            <Typography className="gray-box" variant="h1" align="center">What is <br></br>
+              <TypedText content={realityTypes} /> <br></br>
+              Reality?</Typography>
           </Page>
-          <VRCarousel />
           <ARCarousel />
-
+          <VRCarousel />
+          <MRCarousel />
         </section>
         <section>
           <Typography className="sticker" variant="h2">Second Sticky</Typography>

@@ -14,7 +14,7 @@ export const ARCarousel = () => {
       }}
     >
       <img
-        className="over-1 absolute ar-frame"
+        className="over-1 absolute"
         src="images/ar-frame.png"
         alt="ar frame"
       />
@@ -63,7 +63,7 @@ export const ARCarousel = () => {
           >
             <Box sx={{maxWidth: "80%"}}>
               <Typography className="gray-box" variant="h2" align="center">
-                Next, you try an augmented reality headset.
+                Augmented Reality
               </Typography>
             </Box>
           </Box>
