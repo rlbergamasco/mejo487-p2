@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
-import CssBaseline from '@mui/material/CssBaseline';
+import CssBaseline from '@material-ui/core/CssBaseline';
 window.screen.orientation.lock('landscape')
   .then(
     success => console.log(success),
@@ -9,9 +9,9 @@ window.screen.orientation.lock('landscape')
   );
 
 ReactDOM.render(
-  <React.StrictMode>
+  <React.Fragment>
     <CssBaseline />
     <App />
-  </React.StrictMode>,
+  </React.Fragment>,
   document.getElementById('root')
 );

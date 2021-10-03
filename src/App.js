@@ -1,12 +1,11 @@
 import React from 'react';
 import './app.css';
-import { Typography, Box } from '@mui/material';
-import { TypedText, Page, StickyBox } from 'components';
+import { Typography, Box } from '@material-ui/core';
+import { TypedText, Page, StickyBox, VRCarousel } from 'components';
 import { Waypoint } from 'react-waypoint';
 
 const App = () => {
   const realityTypes = ["Virtual", "Augmented", "Mixed"];
-
   // const [viewHeight, setViewHeight] = useState(0);
   // useEffect(() => {
   //   setViewHeight(document.getElementById('1').clientHeight);
@@ -31,12 +30,14 @@ const App = () => {
             <Page>
               <Typography className="gray-box" variant="h2" align="center" color="white">Imagine you're in a living room.</Typography>
             </Page>
-            <StickyBox onTop>
-              <img src="images/square.png" alt="square" />
-            </StickyBox>
-            <StickyBox>
-              <img src="images/forrest.jpg" alt="forrest" />
-            </StickyBox>
+            <section>
+              <StickyBox onTop>
+                <img src="images/square.png" alt="square" />
+              </StickyBox>
+              <Box className="page" sx={{ width: '100vw', height: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <VRCarousel />
+              </Box>
+            </section>
             <Page>
               <Typography className="gray-box" variant="h2" align="center" color="white">You put on a virtual reality headset and now you're in a forrest...</Typography>
             </Page>
@@ -59,7 +60,7 @@ const App = () => {
         </section>
       </div>
 
-    </React.Fragment>
+    </React.Fragment >
   );
 }
 

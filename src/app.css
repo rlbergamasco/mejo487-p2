@@ -7,6 +7,11 @@ img {
   display: none;
 }
 
+.carousel {
+  width: 100vw;
+  height: 100vh;
+}
+
 .snap {
   width: 100vw;
   height: 100vh;
