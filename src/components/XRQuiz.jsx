@@ -92,7 +92,7 @@ export const XRQuiz = () => {
           You got {obj.numberOfCorrectAnswers} out of {obj.numberOfQuestions}{" "}
           correct.
         </h2>
-        <Box sx={{mt: 4}}>
+        <Box sx={{mt: 2}}>
           <Typography variant="h2" align="center">
             Learn More!
           </Typography>
@@ -126,8 +126,8 @@ export const XRQuiz = () => {
             </Link>
           </Typography>
         </Box>
-        <Box sx={{mt: 4}}>
-          <Typography align="center">
+        <Box sx={{mt: 2}}>
+          <Typography variant="body2" align="center">
             Photos by{" "}
             <Link color="textSecondary" href="https://unsplash.com/@wildhoney">
               John Fowler

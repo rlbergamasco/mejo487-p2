@@ -2,11 +2,15 @@ h2 {
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
   font-weight: 300;
   font-size: 1.75rem;
-  /* line-height: 1.2; */
   letter-spacing: -0.00833em;
   text-align: center;
-
   margin: 0 20px;
+}
+
+@media (max-device-width: 899px) {
+  h2 {
+    font-size: 1.3rem;
+  }
 }
 
 .startQuizWrapper {
@@ -93,64 +97,11 @@ img {
 .gray-box {
   background-color: rgba(0, 0, 0, 0.6);
   color: white;
-  padding: 0 20px;
+  padding: 0 10px;
 }
 
 .white {
   color: white;
-}
-
-/* fade in animation */
-.fade-in-image {
-  animation: fadeIn 5s;
-  -webkit-animation: fadeIn 5s;
-  -moz-animation: fadeIn 5s;
-  -o-animation: fadeIn 5s;
-  -ms-animation: fadeIn 5s;
-}
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@-ms-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 /* media queries */
