@@ -78,39 +78,9 @@ export const MRCarousel = () => {
           >
             <Box sx={{maxWidth: "80%"}}>
               <Typography className="gray-box" variant="h2" align="center">
-                more words
+                Mixed reality (MR) combines elements of AR and VR to allow
+                real-world and digital objects to interact.
               </Typography>
-            </Box>
-          </Box>
-          <Box
-            sx={{
-              height: "100vh",
-              margin: "auto",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <Box sx={{maxWidth: "80%"}}>
-              <Typography className="gray-box" variant="h2" align="center">
-                add more here
-              </Typography>
-            </Box>
-          </Box>
-          <Box
-            sx={{
-              height: "100vh",
-              margin: "auto",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <Box sx={{maxWidth: "80%"}}>
-              <Typography className="white" variant="h2" align="center">
-                Augmented Reality
-              </Typography>
-              <Typography className="white">Augmented Reality</Typography>
             </Box>
           </Box>
         </Carousel>
@@ -118,3 +88,5 @@ export const MRCarousel = () => {
     </Box>
   );
 };
+
+// https://www.fi.edu/tech/what-is-mixed-reality

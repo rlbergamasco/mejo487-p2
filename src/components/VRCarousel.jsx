@@ -83,13 +83,14 @@ export const VRCarousel = () => {
           >
             <Box sx={{maxWidth: "80%"}}>
               <Typography className="gray-box" variant="h2" align="center">
-                changes surroundings...
+                Virtual reality (VR) completely immerses you in an experience
+                and shuts out the physical world around you.
               </Typography>
             </Box>
             <img
               className="under-1 absolute"
-              src="images/forrest.jpg"
-              alt="forrest"
+              src="images/lake.jpg"
+              alt="lake"
             />
           </Box>
           <Box
@@ -103,13 +104,13 @@ export const VRCarousel = () => {
           >
             <Box sx={{maxWidth: "80%"}}>
               <Typography className="gray-box" variant="h2" align="center">
-                ...or in another scenic place.
+                VR can transport you into a real world or imagined environment.
               </Typography>
             </Box>
             <img
               className="under-1 absolute"
-              src="images/livingroom.jpg"
-              alt="living room"
+              src="images/space.jpg"
+              alt="space"
             />
           </Box>
           <Box
@@ -122,14 +123,16 @@ export const VRCarousel = () => {
             }}
           >
             <Box sx={{maxWidth: "80%"}}>
-              <Typography className="white" variant="h2" align="center">
-                Virtual Reality
+              <Typography className="gray-box" variant="h2" align="center">
+                VR devices include all in one headsets like HTC Vive and Oculus
+                Rift and devices that require your phone screen like Google
+                Cardboard and Gear VR.
               </Typography>
-              <Typography className="white">Virtual Reality</Typography>
             </Box>
-            <Box
-              className="under-1 absolute dark-screen"
-              sx={{height: "100vh", width: "100vw"}}
+            <img
+              className="under-1 absolute"
+              src="images/classroom.jpg"
+              alt="classroom"
             />
           </Box>
         </Carousel>
@@ -141,3 +144,7 @@ export const VRCarousel = () => {
     </Box>
   );
 };
+
+// photos by John Fowler (https://unsplash.com/@wildhoney), Sidekix Media (https://unsplash.com/@sidekix), ... on Unsplash (https://unsplash.com)
+// Anatoliy Gromov (https://unsplash.com/@agromov), Ivan Aleksic (https://unsplash.com/@ivalex)
+// https://www.theverge.com/a/best-vr-headset-oculus-rift-samsung-gear-htc-vive-virtual-reality

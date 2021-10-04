@@ -2,7 +2,7 @@ import Quiz from "react-quiz-component";
 
 const quiz = {
   quizTitle:
-    "Test your knowledge on Extended Reality (AR, VR, and MR) by taking a quiz!",
+    "Test your knowledge on Extended Reality! Extended Reality (XR) is an umbrella term for AR, VR, and MR",
   quizSynopsis: "",
   appLocale: {
     landingHeaderText: "",
@@ -16,20 +16,55 @@ const quiz = {
   },
   questions: [
     {
-      question: "Question 1",
+      question:
+        "________ reality fully immerses you in an experience and blocks out the outside world.",
       questionType: "text",
       answerSelectionType: "single",
-      answers: ["answer 1", "answer 2", "answer 3"],
-      correctAnswer: "3",
-      messageForCorrectAnswer: "Correct answer. Good job.",
-      messageForIncorrectAnswer: "Incorrect answer. Please try again.",
-      explanation:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      answers: ["Augmented", "Virtual", "Mixed"],
+      correctAnswer: "2",
+      messageForCorrectAnswer: "You got it!",
+      messageForIncorrectAnswer:
+        "That's not it. The correct answer is Virtual!",
+      explanation: "",
+      point: "1",
+    },
+    {
+      question:
+        "All types of extended reality require you to purchase an expensive headset.",
+      questionType: "text",
+      answerSelectionType: "single",
+      answers: ["True", "False"],
+      correctAnswer: "2",
+      messageForCorrectAnswer: "Great job!",
+      messageForIncorrectAnswer:
+        "There are ways to experience AR, VR, and MR with your phone!",
+      explanation: "",
       point: "1",
     },
   ],
 };
 
 export const XRQuiz = () => {
-  return <Quiz quiz={quiz} showInstantFeedback={true} shuffle={true} />;
+  const renderCustomResultPage = (obj) => {
+    console.log(obj);
+    return (
+      <>
+        <h2>You have completed the quiz!</h2>
+        <h2>
+          You got {obj.numberOfCorrectAnswers} out of {obj.numberOfQuestions}{" "}
+          correct.
+        </h2>
+      </>
+    );
+  };
+
+  return (
+    <Quiz
+      quiz={quiz}
+      showInstantFeedback={true}
+      shuffle={true}
+      showDefaultResult={false}
+      customResultPage={renderCustomResultPage}
+    />
+  );
 };

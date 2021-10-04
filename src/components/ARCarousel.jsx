@@ -78,7 +78,8 @@ export const ARCarousel = () => {
           >
             <Box sx={{maxWidth: "80%"}}>
               <Typography className="gray-box" variant="h2" align="center">
-                more words
+                Augmented reality (AR) allows you to see the real world around
+                you with digital elements overlaying it.
               </Typography>
             </Box>
           </Box>
@@ -93,7 +94,9 @@ export const ARCarousel = () => {
           >
             <Box sx={{maxWidth: "80%"}}>
               <Typography className="gray-box" variant="h2" align="center">
-                add more here
+                Augmented reality can be used to see furniture in your house
+                before you buy it, overlay navigation information as you
+                drive...
               </Typography>
             </Box>
           </Box>
@@ -107,10 +110,26 @@ export const ARCarousel = () => {
             }}
           >
             <Box sx={{maxWidth: "80%"}}>
-              <Typography className="white" variant="h2" align="center">
-                Augmented Reality
+              <Typography className="gray-box" variant="h2" align="center">
+                ...blend past and present by projecting views of historial
+                Pompeii over the ruins, and more.
               </Typography>
-              <Typography className="white">Augmented Reality</Typography>
+            </Box>
+          </Box>
+          <Box
+            sx={{
+              height: "100vh",
+              margin: "auto",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <Box sx={{maxWidth: "80%"}}>
+              <Typography className="gray-box" variant="h2" align="center">
+                You can experience AR through your smartphone using apps like
+                Snapchat and Pokemon Go or through a headset.
+              </Typography>
             </Box>
           </Box>
         </Carousel>
@@ -118,3 +137,5 @@ export const ARCarousel = () => {
     </Box>
   );
 };
+
+// https://www.fi.edu/what-is-augmented-reality

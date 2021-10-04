@@ -46,7 +46,7 @@ const App = () => {
             <XRQuiz />
             <Box sx={{ display: 'flex', justifyContent: 'center' }}>
               <Button onClick={scrollToTop}>
-                Scroll to top
+                back to start
                 <ArrowUpward />
               </Button>
             </Box>

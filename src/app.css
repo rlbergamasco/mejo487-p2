@@ -53,6 +53,12 @@ img {
   scroll-snap-stop: normal;
 }
 
+.quiz-page {
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+  overflow-y: scroll;
+}
+
 .sticker {
   width: 100vw;
   position: sticky;
