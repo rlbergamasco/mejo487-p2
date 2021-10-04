@@ -62,7 +62,7 @@ export const ARCarousel = () => {
             }}
           >
             <Box sx={{maxWidth: "80%"}}>
-              <Typography className="gray-box" variant="h2" align="center">
+              <Typography className="gray-box" variant="h1" align="center">
                 Augmented Reality
               </Typography>
             </Box>

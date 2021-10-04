@@ -4,3 +4,4 @@ export { StickyBox } from "./StickyBox";
 export { VRCarousel } from "./VRCarousel";
 export { ARCarousel } from "./ARCarousel";
 export { MRCarousel } from "./MRCarousel";
+export { XRQuiz } from "./XRQuiz";

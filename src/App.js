@@ -1,7 +1,7 @@
 import React from 'react';
 import './app.css';
-import { Typography, Box } from '@material-ui/core';
-import { TypedText, Page, StickyBox, VRCarousel, ARCarousel, MRCarousel } from 'components';
+import { Typography } from '@material-ui/core';
+import { TypedText, Page, StickyBox, VRCarousel, ARCarousel, MRCarousel, XRQuiz } from 'components';
 
 const App = () => {
   const realityTypes = ["Augmented", "Virtual", "Mixed"];
@@ -30,12 +30,9 @@ const App = () => {
           <VRCarousel />
           <MRCarousel />
         </section>
-        <section>
-          <Typography className="sticker" variant="h2">Second Sticky</Typography>
-          <Page>
-            <Typography variant="h2" align="center">Quiz</Typography>
-          </Page>
-        </section>
+        <Page>
+          <XRQuiz />
+        </Page>
       </div>
 
     </React.Fragment >
