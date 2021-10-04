@@ -1,10 +1,20 @@
 import React from 'react';
 import './app.css';
-import { Typography } from '@material-ui/core';
+import { Button, Typography, Grid, Box } from '@material-ui/core';
+import { ArrowUpward } from '@material-ui/icons';
 import { TypedText, Page, StickyBox, VRCarousel, ARCarousel, MRCarousel, XRQuiz } from 'components';
 
 const App = () => {
   const realityTypes = ["Augmented", "Virtual", "Mixed"];
+
+  const scrollToTop = () => {
+    const body = document.querySelector('.snap')
+    body.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth"
+    });
+  }
   // const [viewHeight, setViewHeight] = useState(0);
   // useEffect(() => {
   //   setViewHeight(document.getElementById('1').clientHeight);
@@ -31,10 +41,19 @@ const App = () => {
           <MRCarousel />
         </section>
         <Page>
-          <XRQuiz />
+          <Grid>
+            <Typography variant="h1" align="center">Quiz</Typography>
+            <XRQuiz />
+            <Box sx={{ display: 'flex', justifyContent: 'center' }}>
+              <Button onClick={scrollToTop}>
+                Scroll to top
+                <ArrowUpward />
+              </Button>
+            </Box>
+          </Grid>
+
         </Page>
       </div>
-
     </React.Fragment >
   );
 }
