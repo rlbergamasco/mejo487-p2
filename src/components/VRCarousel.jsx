@@ -124,8 +124,8 @@ export const VRCarousel = () => {
           >
             <Box sx={{maxWidth: "80%"}}>
               <Typography className="gray-box" variant="h2" align="center">
-                VR devices include all in one headsets like HTC Vive and Oculus
-                Rift and devices that require your phone screen like Google
+                VR devices include all-in-one headsets like HTC Vive and Oculus
+                Rift and devices that use your phone screen like Google
                 Cardboard and Gear VR.
               </Typography>
             </Box>

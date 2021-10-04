@@ -83,6 +83,55 @@ export const MRCarousel = () => {
               </Typography>
             </Box>
           </Box>
+          <Box
+            sx={{
+              height: "100vh",
+              margin: "auto",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <Box sx={{maxWidth: "80%"}}>
+              <Typography className="gray-box" variant="h2" align="center">
+                MR devices can fully encompass your field of vision like a VR
+                headset and use cameras to show the world around you with
+                digital elements mixed in...
+              </Typography>
+            </Box>
+          </Box>
+          <Box
+            sx={{
+              height: "100vh",
+              margin: "auto",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <Box sx={{maxWidth: "80%"}}>
+              <Typography className="gray-box" variant="h2" align="center">
+                ...or they can have a holographic, see-through display similar
+                to an AR headset.
+              </Typography>
+            </Box>
+          </Box>
+          <Box
+            sx={{
+              height: "100vh",
+              margin: "auto",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <Box sx={{maxWidth: "80%"}}>
+              <Typography className="gray-box" variant="h2" align="center">
+                Just like AR and VR, MR can also be experienced through your
+                phone!
+              </Typography>
+            </Box>
+          </Box>
         </Carousel>
       </Box>
     </Box>

@@ -79,7 +79,7 @@ export const ARCarousel = () => {
             <Box sx={{maxWidth: "80%"}}>
               <Typography className="gray-box" variant="h2" align="center">
                 Augmented reality (AR) allows you to see the real world around
-                you with digital elements overlaying it.
+                you with digital elements overlayed on top.
               </Typography>
             </Box>
           </Box>
