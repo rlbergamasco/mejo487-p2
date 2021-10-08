@@ -1,6 +1,7 @@
 img {
   height: 100vh;
-  width: auto;
+  width: 100vw;
+  object-fit: cover;
 }
 
 h2 {
@@ -16,6 +17,12 @@ h2 {
   h2 {
     font-size: 1.3rem;
   }
+}
+
+.frame {
+  height: 100vh;
+  width: 100vw;
+  object-fit: contain;
 }
 
 .startQuizWrapper {

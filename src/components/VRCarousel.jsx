@@ -15,7 +15,7 @@ export const VRCarousel = () => {
       }}
     >
       <img
-        className="over-1 absolute"
+        className="over-1 absolute frame"
         src="images/vr-frame.png"
         alt="vr frame"
       />

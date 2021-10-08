@@ -15,7 +15,7 @@ export const MRCarousel = () => {
       }}
     >
       <img
-        className="over-1 absolute"
+        className="over-1 absolute frame"
         src="images/mr-frame.png"
         alt="mr frame"
       />

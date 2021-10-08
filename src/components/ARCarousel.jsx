@@ -15,7 +15,7 @@ export const ARCarousel = () => {
       }}
     >
       <img
-        className="over-1 absolute"
+        className="over-1 absolute frame"
         src="images/ar-frame.png"
         alt="ar frame"
       />
