@@ -1,5 +1,6 @@
 import {Box, Typography} from "@material-ui/core";
 import Carousel from "react-material-ui-carousel";
+import {LearnMore} from "components";
 
 export const MRCarousel = () => {
   return (
@@ -130,6 +131,7 @@ export const MRCarousel = () => {
                 Just like AR and VR, MR can also be experienced through your
                 phone!
               </Typography>
+              <LearnMore />
             </Box>
           </Box>
         </Carousel>

@@ -2,7 +2,7 @@ import React from 'react';
 import './app.css';
 import { Button, Typography, Grid, Box } from '@material-ui/core';
 import { ArrowUpward } from '@material-ui/icons';
-import { TypedText, Page, StickyBox, VRCarousel, ARCarousel, MRCarousel, XRQuiz } from 'components';
+import { TypedText, Page, StickyBox, VRCarousel, ARCarousel, MRCarousel, XRQuiz, LearnMore } from 'components';
 
 const App = () => {
   const realityTypes = ["Augmented", "Virtual", "Mixed"];
@@ -15,10 +15,6 @@ const App = () => {
       behavior: "smooth"
     });
   }
-  // const [viewHeight, setViewHeight] = useState(0);
-  // useEffect(() => {
-  //   setViewHeight(document.getElementById('1').clientHeight);
-  // });
 
   return (
     <React.Fragment>
@@ -32,15 +28,18 @@ const App = () => {
             <img src="images/livingroom.jpg" alt="living room" />
           </StickyBox>
           <Page>
-            <Typography className="gray-box" variant="h1" align="center">What is <br></br>
-              <TypedText content={realityTypes} /> <br></br>
-              Reality?</Typography>
+            <Grid>
+              <Typography className="gray-box" variant="h1" align="center">What is <br></br>
+                <TypedText content={realityTypes} /> <br></br>
+                Reality?</Typography>
+              <LearnMore />
+            </Grid>
           </Page>
           <ARCarousel />
           <VRCarousel />
           <MRCarousel />
         </section>
-        <Page>
+        <Page >
           <Grid>
             <Typography variant="h1" align="center">Quiz</Typography>
             <XRQuiz />
@@ -59,3 +58,6 @@ const App = () => {
 }
 
 export default App;
+
+// Scroll snap with sticky example 
+// https://codepen.io/michellebarker/pen/XwQXGv

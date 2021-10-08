@@ -1,5 +1,6 @@
 import {Box, Typography} from "@material-ui/core";
 import Carousel from "react-material-ui-carousel";
+import {LearnMore} from "components";
 
 export const VRCarousel = () => {
   return (
@@ -128,6 +129,7 @@ export const VRCarousel = () => {
                 Rift and devices that use your phone screen like Google
                 Cardboard and Gear VR.
               </Typography>
+              <LearnMore />
             </Box>
             <img
               className="under-1 absolute"

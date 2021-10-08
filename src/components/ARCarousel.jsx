@@ -1,5 +1,6 @@
 import {Box, Typography} from "@material-ui/core";
 import Carousel from "react-material-ui-carousel";
+import {LearnMore} from "components";
 
 export const ARCarousel = () => {
   return (
@@ -130,6 +131,7 @@ export const ARCarousel = () => {
                 You can experience AR through your smartphone using apps like
                 Snapchat and Pokemon Go or through a headset.
               </Typography>
+              <LearnMore />
             </Box>
           </Box>
         </Carousel>
