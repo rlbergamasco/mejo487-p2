@@ -1,4 +1,4 @@
-import {Box, Typography} from "@material-ui/core";
+import {Box, Typography, Grid} from "@material-ui/core";
 import Carousel from "react-material-ui-carousel";
 import {LearnMore} from "components";
 
@@ -14,10 +14,23 @@ export const VRCarousel = () => {
         justifyContent: "center",
       }}
     >
-      <img
+      {/* <img
         className="over-1 absolute frame"
         src="images/vr-frame.png"
         alt="vr frame"
+      /> */}
+      {/* <Grid
+        container
+        className="absolute"
+        sx={{width: "100vw", height: "100vh", zIndex: 8}}
+      >
+        <Grid item className="vr-border" />
+        <Grid item className="spacer" />
+        <Grid item className="vr-border" />
+      </Grid> */}
+      <Box
+        className="over-1 absolute vr-frame"
+        sx={{height: "100vh", width: "100vw"}}
       />
       <Box
         sx={{

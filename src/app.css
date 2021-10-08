@@ -111,6 +111,12 @@ h2 {
   color: white;
 }
 
+.vr-frame {
+  background-image: url("./images/vr-frame-1.47.png");
+  background-size: cover;
+  background-position: center;
+}
+
 /* media queries */
 @media only screen and (orientation: portrait) {
   .snap {
@@ -120,3 +126,65 @@ h2 {
     display: block;
   }
 }
+
+@media (min-aspect-ratio: 1858/1080) {
+  .vr-frame {
+    background-image: url("./images/vr-frame-1.77.png");
+    background-size: cover;
+  }
+}
+
+@media (min-aspect-ratio: 2118/1080) {
+  .vr-frame {
+    background-image: url("./images/vr-frame-2.16.png");
+    background-size: cover;
+  }
+}
+
+/* .vr-border {
+  background-color: black;
+}
+
+1.43
+@media (min-aspect-ratio: 658/460) {
+  .vr-border {
+    height: 100vh;
+    width: 7vw;
+  }
+  .spacer {
+    width: 86vw;
+  }
+}
+
+1.777
+@media (max-aspect-ratio: 817/460) {
+  .vr-border {
+    height: 10vh;
+    width: 100vw;
+  }
+  .spacer {
+    height: 80vh;
+  }
+}
+
+2
+@media (min-aspect-ratio: 950/460) {
+  .vr-border {
+    height: 100vh;
+    width: 10vw;
+  }
+  .spacer {
+    width: 80vw;
+  }
+}
+
+1.39
+@media (max-aspect-ratio: 657/460) {
+  .vr-border {
+    height: 20vh;
+    width: 100vw;
+  }
+  .spacer {
+    height: 60vh;
+  }
+} */
