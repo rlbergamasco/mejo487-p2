@@ -18,7 +18,7 @@ const quiz = {
   questions: [
     {
       question:
-        "________ reality fully immerses you in an experience and blocks out the outside world.",
+        "_________ reality fully immerses you in an experience and blocks out the outside world.",
       questionType: "text",
       answerSelectionType: "single",
       answers: ["Augmented", "Virtual", "Mixed"],
@@ -31,7 +31,7 @@ const quiz = {
     },
     {
       question:
-        "Augmented reality and ________ reality both allow the user to see all or part of the word around them.",
+        "Augmented reality and _________ reality both allow the user to see all or part of the word around them.",
       questionType: "text",
       answerSelectionType: "single",
       answers: ["Virtual", "Mixed", "Extended"],
@@ -72,7 +72,7 @@ const quiz = {
       question: "Do you want to learn more about AR, VR, and MR?",
       questionType: "text",
       answerSelectionType: "single",
-      answers: ["Absolutely!", "Not today"],
+      answers: ["Absolutely!"],
       correctAnswer: "1",
       messageForCorrectAnswer: "Click next to find resources to explore!",
       messageForIncorrectAnswer:
@@ -135,6 +135,10 @@ export const XRQuiz = () => {
             ,{" "}
             <Link color="textSecondary" href="https://unsplash.com/@sidekix">
               Sidekix Media
+            </Link>
+            ,{" "}
+            <Link color="textSecondary" href="https://unsplash.com/@sapegin">
+              Artem Sapegin
             </Link>
             ,{" "}
             <Link color="textSecondary" href="https://unsplash.com/@agromov">

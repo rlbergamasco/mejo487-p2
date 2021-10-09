@@ -128,8 +128,8 @@ export const ARCarousel = () => {
           >
             <Box sx={{maxWidth: "80%"}}>
               <Typography className="gray-box" variant="h2" align="center">
-                You can experience AR through your smartphone using apps like
-                Snapchat and Pokemon Go or through a headset.
+                You can experience AR through a headset or through your
+                smartphone using apps like Snapchat and Pokemon Go.
               </Typography>
               <LearnMore />
             </Box>

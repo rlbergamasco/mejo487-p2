@@ -139,15 +139,35 @@ export const VRCarousel = () => {
             <Box sx={{maxWidth: "80%"}}>
               <Typography className="gray-box" variant="h2" align="center">
                 VR devices include all-in-one headsets like HTC Vive and Oculus
-                Rift and devices that use your phone screen like Google
-                Cardboard and Gear VR.
+                Rift...
               </Typography>
-              <LearnMore />
             </Box>
             <img
               className="under-1 absolute"
               src="images/classroom.jpg"
               alt="classroom"
+            />
+          </Box>
+          <Box
+            sx={{
+              height: "100vh",
+              margin: "auto",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <Box sx={{maxWidth: "80%"}}>
+              <Typography className="gray-box" variant="h2" align="center">
+                ...and devices that use your phone screen like Google Cardboard
+                and Gear VR.
+              </Typography>
+              <LearnMore />
+            </Box>
+            <img
+              className="under-1 absolute"
+              src="images/boat.jpg"
+              alt="boat"
             />
           </Box>
         </Carousel>

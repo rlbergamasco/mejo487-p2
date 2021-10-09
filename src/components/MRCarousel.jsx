@@ -135,6 +135,11 @@ export const MRCarousel = () => {
             </Box>
           </Box>
         </Carousel>
+        <img
+          className="under-2 absolute"
+          src="images/mr-items.png"
+          alt="flower vase and globe"
+        />
       </Box>
     </Box>
   );
