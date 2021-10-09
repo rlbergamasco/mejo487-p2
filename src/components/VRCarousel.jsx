@@ -14,23 +14,20 @@ export const VRCarousel = () => {
         justifyContent: "center",
       }}
     >
-      {/* <img
-        className="over-1 absolute frame"
-        src="images/vr-frame.png"
+      <img
+        className="over-1 absolute vr-frame vr-1"
+        src="images/vr-frame-1.47.png"
         alt="vr frame"
-      /> */}
-      {/* <Grid
-        container
-        className="absolute"
-        sx={{width: "100vw", height: "100vh", zIndex: 8}}
-      >
-        <Grid item className="vr-border" />
-        <Grid item className="spacer" />
-        <Grid item className="vr-border" />
-      </Grid> */}
-      <Box
-        className="over-1 absolute vr-frame"
-        sx={{height: "100vh", width: "100vw"}}
+      />
+      <img
+        className="over-1 absolute vr-frame vr-2"
+        src="images/vr-frame-1.77.png"
+        alt="vr frame"
+      />
+      <img
+        className="over-1 absolute vr-frame vr-3"
+        src="images/vr-frame-2.16.png"
+        alt="vr frame"
       />
       <Box
         sx={{
