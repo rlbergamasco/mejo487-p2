@@ -77,7 +77,7 @@ const App = () => {
         </section>
         <Page >
           <Grid>
-            <Typography variant="h1" align="center">Quiz</Typography>
+            {/* <Typography variant="h1" align="center">Quiz</Typography> */}
             <XRQuiz />
             <Box sx={{ display: 'flex', justifyContent: 'center' }}>
               <Button onClick={scrollToTop}>

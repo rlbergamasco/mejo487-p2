@@ -2,9 +2,9 @@ import {Typography, Link, Box} from "@material-ui/core";
 import Quiz from "react-quiz-component";
 
 const quiz = {
-  quizTitle:
+  quizTitle: "Quiz",
+  quizSynopsis:
     "Test your knowledge on Extended Reality! Extended Reality (XR) is an umbrella term for AR, VR, and MR",
-  quizSynopsis: "",
   appLocale: {
     landingHeaderText: "",
     question: "Question",
@@ -13,7 +13,7 @@ const quiz = {
     resultFilterCorrect: "Correct",
     resultFilterIncorrect: "Incorrect",
     nextQuestionBtn: "Next",
-    resultPageHeaderText: "You have completed the quiz!",
+    resultPageHeaderText: "",
   },
   questions: [
     {
@@ -87,11 +87,11 @@ export const XRQuiz = () => {
   const renderCustomResultPage = (obj) => {
     return (
       <>
-        <h2>You have completed the quiz!</h2>
-        <h2>
+        <h3>You have completed the quiz!</h3>
+        <h3>
           You got {obj.numberOfCorrectAnswers} out of {obj.numberOfQuestions}{" "}
           correct.
-        </h2>
+        </h3>
         <Box sx={{mt: 2}}>
           <Typography variant="h2" align="center">
             Learn More!
